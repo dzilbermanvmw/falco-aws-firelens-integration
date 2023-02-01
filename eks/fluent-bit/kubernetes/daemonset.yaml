@@ -16,7 +16,7 @@ spec:
       serviceAccountName: fluent-bit
       containers:
       - name: aws-for-fluent-bit
-        image: amazon/aws-for-fluent-bit:1.2.2
+        image: amazon/aws-for-fluent-bit:latest
         volumeMounts:
         - name: varlog
           mountPath: /var/log
@@ -32,7 +32,7 @@ spec:
           limits:
             memory: 500Mi
           requests:
-            cpu: 500m
+            cpu: 300m
             memory: 100Mi
       volumes:
       - name: varlog
