@@ -15,7 +15,7 @@
     },
     {
       "name": "falco",
-      "image": "falcosecurity/falco:0.17.1",
+      "image": "falcosecurity/falco:latest",
       "essential": true,
       "cpu": 10,
       "memory": 512,
@@ -29,7 +29,7 @@
         "logDriver":"awsfirelens",
         "options": {
           "Name": "cloudwatch",
-          "region": "eu-west-1",
+          "region": "us-west-1",
           "log_group_name": "falco",
           "log_stream_name": "alerts",
           "auto_create_group": "true"
