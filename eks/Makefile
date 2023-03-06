@@ -8,7 +8,9 @@ deploy-fluent-bit:
 	kubectl apply -f fluent-bit/kubernetes/
 
 deploy-falco:
-	helm install --name=falco --set falco.jsonOutput=true --set image.tag=0.17.1 stable/falco
+	#helm install --name=falco --set falco.jsonOutput=true --set image.tag=0.17.1 stable/falco
+	#DZ: updated Falco version and name of json_Output variable
+	helm install --name=falco --set falco.json_Output=true --set image.tag=latest falcosecurity/falco
 
 clean: clean-fluent-bit clean-falco
 
