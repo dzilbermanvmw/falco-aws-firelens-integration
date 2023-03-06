@@ -1,7 +1,7 @@
 # Multi-cluster security with Falco and FluentBit on Amazon EKS & ECS
 
-This repository hold all source code needed for the blogpost about [`Multi-cluster
-security with Falco and FluentBit on Amazon EKS & ECS`] (https://sysdig.com/blog/multi-cluster-security-firelens/)
+This repository hold all source code needed for the blogpost about [Multi-cluster
+security with Falco and FluentBit on Amazon EKS & ECS](https://sysdig.com/blog/multi-cluster-security-firelens/).
 
 There are one directory per step or infrastructure fondation to automate:
 
@@ -33,7 +33,7 @@ This will create and attach the EKS-CloudWatchLogs policy to your node IAM role
 to make sure you can send logs to CloudWatch and will deploy FluentBit daemonset
 with the CloudWatch output plugin.
 
-You can deploy Falco using corresponding [Helm Chart] (https://github.com/falcosecurity/falco.git).
+You can deploy Falco using corresponding [Helm Chart](https://github.com/falcosecurity/falco.git).
 
 ### Deploying ECS integration
 
