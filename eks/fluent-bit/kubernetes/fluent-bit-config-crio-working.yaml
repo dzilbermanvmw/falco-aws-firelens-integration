@@ -46,6 +46,7 @@ data:
         # Command      |  Decoder | Field | Optional Action
         # =============|==================|=================
         Decode_Field_As   json    log
+    
     [PARSER]
         Name        crio
         Format      regex
